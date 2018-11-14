@@ -1,0 +1,148 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // Common ------------------------------------------------------------------
+    {
+        "key": "tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "tab",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+
+    // command palette
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.showCommands",
+        "when": "inQuickOpen && inFilesPicker"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "ctrl+p",
+        "command": "showCommands",
+        "when": "inQuickOpen && inFilesPicker"
+    },
+
+    // open directory
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.files.revealActiveFileInWindows",
+    },
+
+
+    // region select
+    {
+        "key": "shift+alt+down",
+        "command": "cursorColumnSelectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorColumnSelectLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorColumnSelectRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "cursorColumnSelectUp",
+        "when": "editorTextFocus"
+    },
+
+    // move editor, panel, sidebar
+    {
+        "key": "shift+ctrl+[",
+        "command": "workbench.action.previousEditor",
+    },
+    {
+        "key": "shift+ctrl+]",
+        "command": "workbench.action.nextEditor",
+    },
+    {
+        "key": "shift+ctrl+[",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "shift+ctrl+]",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "shift+ctrl+[",
+        "command": "workbench.action.previousSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "shift+ctrl+]",
+        "command": "workbench.action.nextSideBarView",
+        "when": "sideBarFocus"
+    },
+
+
+    // Mac ---------------------------------------------------------------------
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeFolder",
+        "when": "isMac"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.previousPanelView",
+        "when": "isMac && panelFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.nextPanelView",
+        "when": "isMac && panelFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.previousSideBarView",
+        "when": "isMac && sideBarFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.nextSideBarView",
+        "when": "isMac && sideBarFocus"
+    },
+    {
+        "key": "cmd+o",
+        "command": "workbench.action.files.revealActiveFileInWindows",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.showCommands",
+        "when": "isMac && inQuickOpen && inFilesPicker"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.showCommands",
+        "when": "inQuickOpen && inFilesPicker"
+    },
+
+
+    // Windows -----------------------------------------------------------------
+    {
+        "key": "shift+ctrl+w",
+        "command": "workbench.action.closeFolder",
+        "when": "isWindows"
+    },
+]
